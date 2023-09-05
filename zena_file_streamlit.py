@@ -21,7 +21,7 @@ catalog_dataframe= pd.DataFrame(my_catalog)
 
 color_list=catalog_dataframe[0].values.tolist()
 
-option_selected= streamlit.selectbox('Pick a sweatsuit color or style:' list(color_list))
+option_selected= streamlit.selectbox('Pick a sweatsuit color or style:', list(color_list))
 
 product_caption= 'Our warm, confortable,' + option_selected+ 'sweatsuit!'
 
