@@ -26,7 +26,7 @@ option_selected= streamlit.selectbox('Pick a sweatsuit color or style:', list(co
 product_caption= 'Our warm, confortable,' + option_selected+ 'sweatsuit!'
 
 
-my_cur.execute("select direct_url, price, size_list, upsell_product_desc from catalog_for_website where color_or_style = '" + option + "';")
+my_cur.execute("select direct_url, price, size_list, upsell_product_desc from catalog_for_website where color_or_style = " + option + ";")
 
 # insert into fruit_load_list values('"+add_my_fruit+"')
 
