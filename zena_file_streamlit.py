@@ -16,7 +16,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select color_or_style from catalog_for_website")
 my_catalog=my_cur.fetchall()
 
-catalog_dataframe= pd.dataframe(my_catalog)
+catalog_dataframe= pd.DataFrame(my_catalog)
 
 
 color_list=catalog_dataframe[0].values.tolist()
