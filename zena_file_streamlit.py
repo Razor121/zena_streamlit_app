@@ -14,7 +14,7 @@ my_cur = my_cnx.cursor()
 
 # snowflake query to get the data of catalog_website view which was created by zena in the last (The big code)
 my_cur.execute("select color_or_style from catalog_for_website")
-my_catalog=my_cur.fetall()
+my_catalog=my_cur.fetchall()
 
 catalog_dataframe= pd.DataFrame(my_catalog)
 
